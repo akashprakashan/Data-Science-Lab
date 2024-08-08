@@ -1,0 +1,26 @@
+a =[]
+
+n=int(input("enter the array limit"))
+for i in range(n):
+    a.append(int(input()))
+print(a)
+for i in range(n):
+    for j in range(i+1,n):
+        if(a[i]>a[j]):
+            temp=a[i]
+            a[i]=a[j]
+            a[j]=temp
+print(a)
+
+
+************
+Output
+C:\Users\mlm\PycharmProjects\pythonProject\venv\Scripts\python.exe C:\Users\mlm\PycharmProjects\pythonProject\bubble.py 
+enter the array limit3
+7
+2
+9
+[7, 2, 9]
+[2, 7, 9]
+
+Process finished with exit code 0
